@@ -41,8 +41,12 @@ section#redes-sociais{
     align-items: flex-end;
     justify-content: space-around;
     display: flex;
-    width: 219px;
+    width: auto;
     display: block;
+ }
+
+ section > a{
+   margin-right: 25px;
  }
 
  section#redes-sociais img{
