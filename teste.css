@@ -43,6 +43,7 @@ section#redes-sociais{
     display: flex;
     width: auto;
     display: block;
+    margin-left: 500px;
  }
 
  section > a{
