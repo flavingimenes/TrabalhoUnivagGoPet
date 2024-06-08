@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botão Ver Mais</title>
     <link rel="stylesheet" href="botao.css">
+    <style>
+
+        @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+        view{
+            display: flex;
+            flex-wrap: wrap;
+        } 
+
+        .block{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+            background-color: rgb(99, 70, 70);
+            border: 1px solid black;
+            width: 500px;
+            height: 200px;
+            margin: 50px;
+        }
+    </style>
 </head>
 <body>
     <div class="content">
@@ -14,5 +42,25 @@
     </div>
 
     <script src="botao.js"></script>
+    
+    <h1>animated when scroll</h1>
+    <div class="view" style="display: flex; flex-wrap: wrap;">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+</div>
 </body>
 </html>

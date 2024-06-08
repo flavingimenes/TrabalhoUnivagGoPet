@@ -8,11 +8,17 @@ main{
 
 @media (max-width: 768px){
     main{
-        font-size: 13px;
+        font-size: 14px;
         flex-wrap: wrap;
     }
 }
 
+@media (max-width: 768px){
+   body > div > header > img{
+      height: 130px;
+      width: 130px;
+   }
+}
 
 *{
     margin: 0;
@@ -20,6 +26,14 @@ main{
     font-family: "Poppins", sans-serif;
 }
 
+.hidden-text{
+   display: none;
+}
+
+div > header > img{
+   height: 200px;
+   width: 260px;
+}
 
 .flexivel{
    background-image: url(imagens/cachorrocentro.jpg);
@@ -99,8 +113,9 @@ section#redes-sociais{
     justify-content: space-around;
     padding-top: 140px;
     padding-bottom: 140px;
-    background-image: url(imagens/cachorro-no-computer.jpg);
+    background-image: url(imagens/cachorro-no-computador3.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: auto;
@@ -116,7 +131,7 @@ section#redes-sociais{
     border-radius: 10px;
     border: 1px solid #D7702D;
     border-collapse: separate;
-    margin: 30px 0px;
+    margin: 30px 10px;
  }
 
  main > div > p{
@@ -132,4 +147,21 @@ section#redes-sociais{
    padding-bottom: 20px;
    text-align: center;
  }
- 
+
+ main > div > p > button{
+   font-size: medium;
+   font-weight: bold;
+   border: 0px solid;
+   border-radius: 6px;
+   background-color: #D7702D;
+   width: 67%;
+   height: 32px;
+   margin-top: 15px;
+   margin-left: 70px;
+   margin-right: 70px;
+   cursor: pointer;
+ }
+
+ main > div > p > button:hover{
+   background-color: #e79660;
+ }
