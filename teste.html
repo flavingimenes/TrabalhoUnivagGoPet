@@ -14,7 +14,7 @@
         <section id="redes-sociais">
             <a href="https://www.instagram.com/gopetcuiaba/" target="_blank"><img src="imagens/Instagram-Icon.png" alt="Home"></a>
             <a href="https://api.whatsapp.com/send?phone=5565981411789&text=GoPet" target="_blank"><img src="imagens/whattsappng.png" alt="Insta"></a>
-            <a href="mailto:jademiguelvet@gmail.com?subject=petshop&body=GoPet" target="_blank"><img src="imagens/email-png.png" alt="Youtube"></a>
+            <a href="https://mail.google.com/mail/u/0/#search/jademiguelvet%40gmail.com?compose=new" target="_blank"><img src="imagens/email-png.png" alt="Youtube"></a>
         </section>
     </div>
 <main>
@@ -24,10 +24,26 @@
     </div>
 
     <div>
-        <p><strong>QUEM SOMOS</strong> <br> <br> Nossa ética profissional é guiada por um compromisso inabalável com a excelência e a integridade. Nossos serviços de Consultoria Nutricional são liderados pela Zootecnista Jade Odara, altamente qualificada, com profundo conhecimento em nutrição e comportamento animal. Esta equipe está aqui para orientar e apoiar os tutores em suas jornadas de nutrição pet, garantindo que cada animal receba a dieta ideal para suas necessidades individuais.
-            Além disso, entendemos que a vida moderna pode ser agitada e nem sempre é fácil cuidar dos nossos amigos peludos da maneira que gostaríamos. É por isso que oferecemos serviços especializados de Pet Sitter e Transporte Pet Personalizado. Nossos profissionais e acadêmicos em conclusão de curso na área de Medicina Veterinária ou Zootecnia garantem que seus pets recebam cuidados atenciosos e seguros sempre que você precisar.
-            .</p>
+        
+        <p class="short-text"><strong>QUEM SOMOS</strong> <br> <br> Nossa ética profissional é guiada por um compromisso inabalável com a excelência e a integridade. Nossos serviços de Consultoria Nutricional são liderados pela Zootecnista Jade Odara, altamente qualificada, com profundo conhecimento em nutrição e comportamento animal. <strong id="verMaisBtn">Saiba Mais...</strong> </p><p class="more-text" style="display: none;">
+            Esta equipe está aqui para orientar e apoiar os tutores em suas jornadas de nutrição pet, garantindo que cada animal receba a dieta ideal para suas necessidades individuais.
+                Além disso, entendemos que a vida moderna pode ser agitada e nem sempre é fácil cuidar dos nossos amigos peludos da maneira que gostaríamos. É por isso que oferecemos serviços especializados de Pet Sitter e Transporte Pet Personalizado. Nossos profissionais e acadêmicos em conclusão de curso na área de Medicina Veterinária ou Zootecnia garantem que seus pets recebam cuidados atenciosos e seguros sempre que você precisar. </p>
     </div>
+    
 </main>
+<script>
+    document.getElementById('verMaisBtn').addEventListener('click', function() {
+    var moreText = document.querySelector('.more-text');
+    var btn = document.getElementById('verMaisBtn');
+
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'block';
+        btn.textContent = 'Ver menos';
+    } else {
+        moreText.style.display = 'none';
+        btn.textContent = 'Ver mais';
+    }
+});
+</script>
 </body>
 </html>
