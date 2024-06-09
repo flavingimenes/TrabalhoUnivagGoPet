@@ -33,6 +33,7 @@ main{
 div > header > img{
    height: 200px;
    width: 260px;
+   margin-top: 15px;
 }
 
 .flexivel{
@@ -104,7 +105,7 @@ section#redes-sociais{
     justify-content: space-evenly;
  }
 
- main{
+ main.main1{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
