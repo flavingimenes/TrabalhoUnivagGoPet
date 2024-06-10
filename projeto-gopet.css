@@ -3,13 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 main{
-   font-size: 1em;
+   font-size: medium;
 }
 
 @media (max-width: 768px){
     main{
         font-size: 14px;
         flex-wrap: wrap;
+    }
+
+    article.petsitter > strong{
+      font-size: 1.5em;
+    }
+
+    article.petsitter{
+      width: 100%;
+      margin-right: 30px;
     }
 }
 
@@ -19,7 +28,6 @@ main{
       width: 130px;
    }
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +36,17 @@ main{
 
 .hidden-text{
    display: none;
+}
+
+.hidden-text {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+   opacity: 0;
+}
+.hidden-text.show {
+   max-height: 1000px; /* Ajuste conforme necessário */
+   opacity: 1;
 }
 
 div > header > img{
@@ -46,10 +65,7 @@ div > header > img{
     height: 175px;
     justify-content: space-around;
     align-items: center;
-    border: solid #D7702D 3px;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 3px 3px 10px  black;
-    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 13px 0px black;
 }
 
 .navbar{
@@ -114,18 +130,18 @@ section#redes-sociais{
     justify-content: space-around;
     padding-top: 140px;
     padding-bottom: 140px;
-    background-image: url(imagens/cachorro-no-computador3.png);
+    background-image: url(imagens/cachorro-no-computer.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: auto;
     align-items: center;
-    border: 4px solid black;
+    border: 4px solid #2d481f;
  }
 
  main > div{
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(255, 255, 255, 0.726);
     display: flex;
     width: 700px;
     height: auto;
@@ -166,3 +182,43 @@ section#redes-sociais{
  main > div > p > button:hover{
    background-color: #e79660;
  }
+
+ .main2{
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ .petsitter{
+   font-size: medium;
+   display: block;
+   width: 40%;
+   height: auto;
+   text-align: justify;
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+
+ .petsitter > strong{
+   font-size: 2em;
+ }
+
+ .main2 > div{
+   width: auto;
+   border: 0px;
+ }
+
+ .main2 > div > article > button {
+   font-size: medium;
+   font-weight: bold;
+   border: 0px solid;
+   border-radius: 6px;
+   background-color: #D7702D;
+   width: 67%;
+   height: 32px;
+   margin-top: 15px;
+   margin-left: 70px;
+   margin-right: 70px;
+   cursor: pointer;
+ }
+
+ 
