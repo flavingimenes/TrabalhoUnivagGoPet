@@ -76,10 +76,38 @@ div > header > img{
     box-shadow: inset 0px 0px 13px 0px black;
 }
 
-.navbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.navbar {
+   overflow: hidden;
+   background-color: #333;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   border-top: 4px solid #2d481f;
+}
+
+.navbar a {
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 20px;
+   text-decoration: none;
+}
+
+.navbar a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.navbar a.active {
+   background-color: #ee8742;
+   color: white;
+}
+
+.navbar a.active:hover{
+   background-color: #c26b31c7;
+   color: white;
 }
 
 header > img{
@@ -145,7 +173,8 @@ section#redes-sociais{
     background-size: cover;
     height: auto;
     align-items: center;
-    border: 4px solid #2d481f;
+    border-top: 4px solid #2d481f;
+    border-bottom: 4px solid #2d481f;
  }
 
  main > div{
@@ -182,9 +211,10 @@ section#redes-sociais{
    width: 67%;
    height: 32px;
    margin-top: 15px;
-   margin-left: 70px;
-   margin-right: 70px;
+   margin-left: auto;
+   margin-right: auto;
    cursor: pointer;
+   display: block;
  }
 
  main > div > p > button:hover{
@@ -215,6 +245,40 @@ margin: 50px 30px;
    flex-wrap: wrap;
  }
 
+ .img-botao{
+   margin: auto;
+ }
+
+ .botao-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: aqua;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-top: 15px;
+    font-size: 1.4em;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+ }
+
+ .botao-img:hover{
+    border: 2px solid black(255, 255, 255, 0.644);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+    transition: transform 0.2s;
+ }
+
+ .material-icons{
+   font-size: 1em;
+   margin-left: 10px;
+ }
+
  .main2 > div > article > button {
    font-size: medium;
    font-weight: bold;
@@ -231,11 +295,12 @@ margin: 50px 30px;
 
  #transportes{
    margin: 0px;
-   height: 300px;
-   width: 300px;
+   height: 400px;
+   width: 400;
+   padding-bottom: 35px;
  }
 
- main > div > img{
+ main > div > div > img{
    margin: auto;
  }
 
@@ -266,6 +331,30 @@ view{
    margin: 0px;
  }
 
+ .main3 > h1{
+   text-align: center;
+   margin-top: 100px
+ }
+
+ #naturais{
+   color: #52c552;
+   font-weight: bolder;
+ }
+
+ .main3 > div{
+   width: auto;
+   border: 0px;
+ }
+
+ .produtos1{
+   font-size: medium;
+    display: block;
+    width: 40%;
+    height: auto;
+    text-align: justify;
+    margin: 50px 30px;
+ }
+
  @media (max-width: 768px){
    body > div > header > img{
       height: 130px;
@@ -279,7 +368,6 @@ view{
    #transportes{
       width: 340px;
       height: 340px;
-      padding-top: 60px;
       margin: auto;
    }
 

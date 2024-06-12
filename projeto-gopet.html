@@ -6,19 +6,28 @@
     <title>GoPetCuiaba</title>
     <link rel="stylesheet" href="projeto-gopet.css">
     <link rel="shortcut icon" href="imagens/minilogogopet.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
-<body>
+<body id="home">
     <div class="flexivel" id="fotocentro">
         <header>
             <img src="imagens/logo-ofgopet.png" alt="">
-       </header>
+        </header>
         <section id="redes-sociais">
             <a href="https://www.instagram.com/gopetcuiaba/" target="_blank"><img src="imagens/Instagram-Icon.png" alt="Instagram"></a>
-            <a href="https://api.whatsapp.com/send?phone=5565981411789&text=GoPet" target="_blank"><img src="imagens/whattsappng.png" alt="Whattsap"></a>
+            <a href="https://api.whatsapp.com/send?phone=5565981411789&text=GoPet" target="_blank"><img src="imagens/whattsappng.png" alt="WhatsApp"></a>
             <a href="https://mail.google.com/mail/u/0/#search/jademiguelvet%40gmail.com?compose=new" target="_blank"><img src="imagens/email-png.png" alt="Email" style="margin-right: 10px;"></a>
         </section>
     </div>
-    <main class="main1">
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </div>
+    <main class="main1" id="sobre">
         <div>
             <p><strong>SOBRE</strong> <br> <br> 
                 <span class="visible-text">Na <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, nossos princípios fundamentais estão enraizados no compromisso com o bem-estar dos seus companheiros peludos. Acreditamos que a nutrição é a base para uma vida longa e saudável para os pets, e é por isso que nos dedicamos a oferecer opções alimentares que promovam não apenas a saúde física, mas também o bem-estar mental e emocional dos animais de estimação. <br> </span>
@@ -26,7 +35,7 @@
                 <button class="toggle-button">Ver Mais</button>
             </p>  
         </div>
-        <div>
+        <div id="quem-somos">
             <p><strong>QUEM SOMOS</strong> <br> <br>
                 <span class="visible-text">Nossa ética profissional é guiada por um compromisso inabalável com a excelência e a integridade. Nossos serviços de Consultoria Nutricional são liderados pela Zootecnista <strong style="font-size: 1.1em;">Jade Odara</strong>, altamente qualificada, com profundo conhecimento em nutrição e comportamento animal. Esta equipe está aqui para orientar e apoiar os tutores em suas jornadas de nutrição pet, garantindo que cada animal receba a dieta ideal para suas necessidades individuais. <br> </span>
                 <span class="hidden-text"> <br> Além disso, entendemos que a vida moderna pode ser agitada nem sempre é fácil cuidar dos nossos amigos peludos da maneira que gostaríamos. É por isso que oferecemos serviços especializados de <strong style="color: rgb(212, 92, 112);">Pet Sitter</strong> e <strong style="color: rgb(84, 84, 207);">Transporte</strong> <strong style="color: #D7702D;">Pet</strong> <strong>Personalizado.</strong> Nossos profissionais e acadêmicos em conclusão de curso na área de Medicina Veterinária ou Zootecnia garantem que seus pets recebam cuidados atenciosos e seguros sempre que você precisar.</span>
@@ -34,7 +43,7 @@
             </p>
         </div>
     </main>
-    <main class="main2">
+    <main class="main2" id="servicos">
         <h1><strong>SERVIÇOS QUE ENCANTAM :</strong> </h1>
         <div class="textos">
             <article class="servicos"><strong>Pet Sitter</strong>
@@ -43,7 +52,12 @@
                 Quando você opta pelo serviço de Pet Sitter da <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, você pode ter tranquilidade sabendo que seus pets estão sendo cuidados no conforto do seu próprio lar. Nossos profissionais dedicados visitarão sua casa conforme o agendamento para fornecer alimentação, água fresca, passeios, brincadeiras e qualquer outra necessidade específica do seu pet. <br> <br>
                 Além disso, entendemos o quanto é importante para os tutores se manterem informados e conectados com seus pets enquanto estão longe. É por isso que nossos Pet Sitters enviam relatórios diários detalhados, juntamente com fotos e vídeos, para que você possa acompanhar o progresso e o bem-estar dos seus animais de estimação em tempo real.
                 </article>
-                <img src="imagens/petsitterpng.png" alt="PetSitter" class="imgpetsitter">
+                <div class="img-botao">
+                    <img src="imagens/petsitterpng.png" alt="PetSitter" class="imgpetsitter">
+                    <a class="botao-img" href="https://www.instagram.com/p/CloQb__uJ4M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Saiba Mais! <span class="material-icons">
+                        launch
+                        </span></a>
+                </div>
         </div>
         <div class="textos" id="transporte">
             <article class="servicos">
@@ -54,8 +68,23 @@
                 O que diferencia nosso serviço é o cuidado e a atenção aos detalhes. Nossos motoristas estão sempre atentos às necessidades individuais de cada pet, garantindo que eles se sintam confortáveis e seguros durante todo o trajeto. Além disso, eles também recebem todas as informações necessárias dos profissionais que atenderam o seu pet, para que você fique totalmente informado sobre o estado de saúde e bem-estar do seu amigo peludo. <br><br>
                 Oferecemos opções flexíveis de agendamento, desde transportes avulsos até pacotes mensais. Os pacotes mensais oferecem vantagens adicionais, como descontos no valor, prioridade de atendimento em emergências e horários reservados para os clientes, garantindo conveniência e economia para os tutores comprometidos com o bem-estar dos seus pets.               
             </article>
-            <img id="transportes" src="imagens/transporte1.png" alt="">
-            <img id="transportes" src="imagens/transporte2.png" alt="">
+            <div class="img-botao">
+                <img id="transportes" src="imagens/transporte1.png" alt="">
+                <a class="botao-img" style="background-color: #FF7FCF;" href="https://www.instagram.com/reel/ClBthCIOLuA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Saiba Mais! <span class="material-icons">
+                    launch
+                    </span></a>
+            </div>
+        </div>
+    </main>
+    <main class="main3" id="produtos">
+        <h1><strong>Produtos <strong id="naturais">Naturais </strong>:</strong>
+        </h1>
+        <div class="textos">
+            <article class="produtos1">
+                Na GoPet Nutrição, estamos comprometidos em oferecer apenas os melhores produtos para os nossos clientes peludos. Por isso, garantimos que todos os produtos que revendemos são provenientes de fábricas que passam por uma rigorosa fiscalização dos órgãos competentes. <br><br>
+                Todas as fábricas parceiras da GoPet Nutrição são geridas por profissionais altamente qualificados, incluindo médicos veterinários e zootecnistas. Esses especialistas entendem a importância da qualidade e segurança dos produtos que oferecemos para os pets, e trabalham incansavelmente para garantir que cada item atenda aos mais altos padrões de excelência.
+
+            </article>
         </div>
     </main>
     <script>
