@@ -10,43 +10,51 @@ main{
     main{
         font-size: 14px;
         flex-wrap: wrap;
+       
     }
 
-    article.petsitter > strong{
+    article.servicos > strong{
       font-size: 1.5em;
     }
 
-    article.petsitter{
+    article.servicos{
       width: 100%;
       margin-right: 30px;
     }
 }
 
-@media (max-width: 768px){
-   body > div > header > img{
-      height: 130px;
-      width: 130px;
+
+
+@media (min-width: 847px){
+   main{
+     margin-left: 30px;
+     margin-right: 30px; 
+   } 
+    main > div > img{
+      height: 400px;
+      width: 400px;
    }
 }
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
-.hidden-text{
-   display: none;
+#pet{
+   color: #D7702D;
+   font-size: 1.2em;
 }
 
-.hidden-text {
-   max-height: 0;
-   overflow: hidden;
-   transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-   opacity: 0;
+#go{
+ color: #2d481f;
+ font-size: 1.2em;
 }
-.hidden-text.show {
-   max-height: 1000px; /* Ajuste conforme necessário */
-   opacity: 1;
+
+.hidden-text{
+   display: none;
 }
 
 div > header > img{
@@ -148,7 +156,7 @@ section#redes-sociais{
     border-radius: 10px;
     border: 1px solid #D7702D;
     border-collapse: separate;
-    margin: 30px 10px;
+    margin: 100px 10px;
  }
 
  main > div > p{
@@ -183,28 +191,28 @@ section#redes-sociais{
    background-color: #e79660;
  }
 
- .main2{
+ .main2 > h1{
    text-align: center;
-   padding-top: 50px;
+   margin-top: 100px
  }
 
- .petsitter{
+ .servicos{
    font-size: medium;
    display: block;
    width: 40%;
    height: auto;
    text-align: justify;
-   margin-left: 30px;
-   margin-top: 50px;
+margin: 50px 30px;
  }
 
- .petsitter > strong{
+ .servicos > strong{
    font-size: 2em;
  }
 
  .main2 > div{
    width: auto;
    border: 0px;
+   flex-wrap: wrap;
  }
 
  .main2 > div > article > button {
@@ -220,5 +228,61 @@ section#redes-sociais{
    margin-right: 70px;
    cursor: pointer;
  }
+
+ #transportes{
+   margin: 0px;
+   height: 300px;
+   width: 300px;
+ }
+
+ main > div > img{
+   margin: auto;
+ }
+
+ @keyframes appear{
+   from{
+       opacity: 0;
+       scale: 0.5;
+   }
+   to{
+       opacity: 1;
+       scale: 1;
+   }
+}
+view{
+   display: flex;
+   flex-wrap: wrap;
+} 
+
+.textos{
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: entry 0 cover 20%;
+ }
+
+ #transporte{
+   margin-top: 130px;
+   flex-direction: row-reverse;
+   margin: 0px;
+ }
+
+ @media (max-width: 768px){
+   body > div > header > img{
+      height: 130px;
+      width: 130px;
+   }
+
+   main > div > img {
+      padding-top: 50px;
+   }
+
+   #transportes{
+      width: 340px;
+      height: 340px;
+      padding-top: 60px;
+      margin: auto;
+   }
+
+}
 
  
