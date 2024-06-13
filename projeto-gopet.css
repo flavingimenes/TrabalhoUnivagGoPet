@@ -333,7 +333,7 @@ view{
 
  .main3 > h1{
    text-align: center;
-   margin-top: 100px
+   margin-top: 250px
  }
 
  #naturais{
@@ -344,15 +344,30 @@ view{
  .main3 > div{
    width: auto;
    border: 0px;
+   justify-content: center;
+   display: block;
  }
+
 
  .produtos1{
    font-size: medium;
     display: block;
-    width: 40%;
+    width: 50%;
     height: auto;
     text-align: justify;
-    margin: 50px 30px;
+    margin: auto;
+    margin-bottom: 100px;
+ }
+
+ .stroprodutos{
+   font-size: 1.4em;
+ }
+
+ .produtosall{
+   display: flex;
+   font-size: medium;
+   text-align: justify;
+   gap: 80px;
  }
 
  @media (max-width: 768px){
@@ -370,6 +385,10 @@ view{
       height: 340px;
       margin: auto;
    }
+
+   .produtos1{
+      width: 85%;
+     }
 
 }
 
