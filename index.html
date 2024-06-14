@@ -1,77 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoPetCuiaba</title>
     <link rel="stylesheet" href="projeto-gopet.css">
     <link rel="shortcut icon" href="imagens/minilogogopet.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body id="home">
     <div class="flexivel" id="fotocentro">
         <header>
             <img src="imagens/logo-ofgopet.png" alt="">
         </header>
         <section id="redes-sociais">
-            <a href="https://www.instagram.com/gopetcuiaba/" target="_blank"><img src="imagens/Instagram-Icon.png" alt="Instagram"></a>
-            <a href="https://api.whatsapp.com/send?phone=5565981411789&text=GoPet" target="_blank"><img src="imagens/whattsappng.png" alt="WhatsApp"></a>
-            <a href="https://mail.google.com/mail/u/0/#search/jademiguelvet%40gmail.com?compose=new" target="_blank"><img src="imagens/email-png.png" alt="Email" style="margin-right: 10px;"></a>
+            <a href="https://www.instagram.com/gopetcuiaba/" target="_blank"><img src="imagens/Instagram-Icon.png"
+                    alt="Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=5565981411789&text=GoPet" target="_blank"><img
+                    src="imagens/whattsappng.png" alt="WhatsApp"></a>
+            <a href="https://mail.google.com/mail/u/0/#search/jademiguelvet%40gmail.com?compose=new"
+                target="_blank"><img src="imagens/email-png.png" alt="Email" style="margin-right: 10px;"></a>
         </section>
     </div>
     <div class="navbar">
         <a class="active" href="#home">Home</a>
         <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
         <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
         <a href="#contato">Contato</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
     </div>
     <main class="main1" id="sobre">
         <div>
-            <p><strong>SOBRE</strong> <br> <br> 
-                <span class="visible-text">Na <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, nossos princípios fundamentais estão enraizados no compromisso com o bem-estar dos seus companheiros peludos. Acreditamos que a nutrição é a base para uma vida longa e saudável para os pets, e é por isso que nos dedicamos a oferecer opções alimentares que promovam não apenas a saúde física, mas também o bem-estar mental e emocional dos animais de estimação. <br> </span>
-                <span class="hidden-text"> <br>Em um mundo onde as opções são abundantes, optamos por um caminho que prioriza escolhas naturais. Entendemos que a natureza fornece tudo o que nossos pets precisam para prosperar, e é por isso que nos esforçamos para oferecer produtos que refletem essa sabedoria. Acreditamos que uma dieta equilibrada e natural é essencial para a saúde deles, e é isso que buscamos proporcionar em cada produto que oferecemos.</span>
-                <button class="toggle-button">Ver Mais</button>
-            </p>  
+            <p><strong>SOBRE</strong> <br> <br>
+                <span class="visible-text">Na <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição,
+                    nossos princípios fundamentais estão enraizados no compromisso com o bem-estar dos seus companheiros
+                    peludos. Acreditamos que a nutrição é a base para uma vida longa e saudável para os pets, e é por
+                    isso que nos dedicamos a oferecer opções alimentares que promovam não apenas a saúde física, mas
+                    também o bem-estar mental e emocional dos animais de estimação. <br> </span>
+                <span class="hidden-text"> <br>Em um mundo onde as opções são abundantes, optamos por um caminho que
+                    prioriza escolhas naturais. Entendemos que a natureza fornece tudo o que nossos pets precisam para
+                    prosperar, e é por isso que nos esforçamos para oferecer produtos que refletem essa sabedoria.
+                    Acreditamos que uma dieta equilibrada e natural é essencial para a saúde deles, e é isso que
+                    buscamos proporcionar em cada produto que oferecemos.</span>
+                <button class="toggle-button" style="color: black;">Ver Mais</button>
+            </p>
         </div>
         <div id="quem-somos">
             <p><strong>QUEM SOMOS</strong> <br> <br>
-                <span class="visible-text">Nossa ética profissional é guiada por um compromisso inabalável com a excelência e a integridade. Nossos serviços de Consultoria Nutricional são liderados pela Zootecnista <strong style="font-size: 1.1em;">Jade Odara</strong>, altamente qualificada, com profundo conhecimento em nutrição e comportamento animal. Esta equipe está aqui para orientar e apoiar os tutores em suas jornadas de nutrição pet, garantindo que cada animal receba a dieta ideal para suas necessidades individuais. <br> </span>
-                <span class="hidden-text"> <br> Além disso, entendemos que a vida moderna pode ser agitada nem sempre é fácil cuidar dos nossos amigos peludos da maneira que gostaríamos. É por isso que oferecemos serviços especializados de <strong style="color: rgb(212, 92, 112);">Pet Sitter</strong> e <strong style="color: rgb(84, 84, 207);">Transporte</strong> <strong style="color: #D7702D;">Pet</strong> <strong>Personalizado.</strong> Nossos profissionais e acadêmicos em conclusão de curso na área de Medicina Veterinária ou Zootecnia garantem que seus pets recebam cuidados atenciosos e seguros sempre que você precisar.</span>
-                <button class="toggle-button">Ver mais</button>
+                <span class="visible-text">Nossa ética profissional é guiada por um compromisso inabalável com a
+                    excelência e a integridade. Nossos serviços de Consultoria Nutricional são liderados pela
+                    Zootecnista <strong style="font-size: 1.1em;">Jade Odara</strong>, altamente qualificada, com
+                    profundo conhecimento em nutrição e comportamento animal. Esta equipe está aqui para orientar e
+                    apoiar os tutores em suas jornadas de nutrição pet, garantindo que cada animal receba a dieta ideal
+                    para suas necessidades individuais. <br> </span>
+                <span class="hidden-text"> <br> Além disso, entendemos que a vida moderna pode ser agitada nem sempre é
+                    fácil cuidar dos nossos amigos peludos da maneira que gostaríamos. É por isso que oferecemos
+                    serviços especializados de <strong class="petsitterblue">Pet Sitter</strong> e <strong
+                        class="transportepink">Transporte</strong> <strong
+                        class="pet">Pet</strong> <strong>Personalizado.</strong> Nossos profissionais e
+                    acadêmicos em conclusão de curso na área de Medicina Veterinária ou Zootecnia garantem que seus pets
+                    recebam cuidados atenciosos e seguros sempre que você precisar.</span>
+                <button class="toggle-button" style="color: black;">Ver mais</button>
             </p>
         </div>
     </main>
     <main class="main2" id="servicos">
         <h1><strong>SERVIÇOS QUE ENCANTAM :</strong> </h1>
         <div class="textos">
-            <article class="servicos"><strong>Pet Sitter</strong>
-                Na <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, entendemos que deixar nossos amigos peludos sozinhos pode ser uma preocupação para muitos tutores. É por isso que oferecemos o serviço de Pet Sitter, uma solução personalizada para garantir que seus pets recebam todos os cuidados e atenção necessários, mesmo na sua ausência. <br> <br>
-                Nossos Pet Sitters são profissionais altamente qualificados, formados na área animal ou acadêmicos em conclusão de cursos relacionados, o que significa que eles possuem o conhecimento e a experiência necessários para lidar com uma variedade de situações e necessidades dos pets. <br> <br>
-                Quando você opta pelo serviço de Pet Sitter da <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, você pode ter tranquilidade sabendo que seus pets estão sendo cuidados no conforto do seu próprio lar. Nossos profissionais dedicados visitarão sua casa conforme o agendamento para fornecer alimentação, água fresca, passeios, brincadeiras e qualquer outra necessidade específica do seu pet. <br> <br>
-                Além disso, entendemos o quanto é importante para os tutores se manterem informados e conectados com seus pets enquanto estão longe. É por isso que nossos Pet Sitters enviam relatórios diários detalhados, juntamente com fotos e vídeos, para que você possa acompanhar o progresso e o bem-estar dos seus animais de estimação em tempo real.
-                </article>
-                <div class="img-botao">
-                    <img src="imagens/petsitterpng.png" alt="PetSitter" class="imgpetsitter">
-                    <a class="botao-img" href="https://www.instagram.com/p/CloQb__uJ4M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Saiba Mais! <span class="material-icons">
+            <article class="servicos"><strong style="color: #5454cf;" class="venda">Pet Sitter</strong>
+                Na <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição, entendemos que deixar nossos
+                amigos peludos sozinhos pode ser uma preocupação para muitos tutores. É por isso que oferecemos o
+                serviço de Pet Sitter, uma solução personalizada para garantir que seus pets recebam todos os cuidados e
+                atenção necessários, mesmo na sua ausência. <br> <br>
+                Nossos Pet Sitters são profissionais altamente qualificados, formados na área animal ou acadêmicos em
+                conclusão de cursos relacionados, o que significa que eles possuem o conhecimento e a experiência
+                necessários para lidar com uma variedade de situações e necessidades dos pets. <br> <br>
+                Quando você opta pelo serviço de Pet Sitter da <strong class="go">Go</strong><strong
+                    class="pet">Pet</strong> Nutrição, você pode ter tranquilidade sabendo que seus pets estão sendo
+                cuidados no conforto do seu próprio lar. Nossos profissionais dedicados visitarão sua casa conforme o
+                agendamento para fornecer alimentação, água fresca, passeios, brincadeiras e qualquer outra necessidade
+                específica do seu pet. <br> <br>
+                Além disso, entendemos o quanto é importante para os tutores se manterem informados e conectados com
+                seus pets enquanto estão longe. É por isso que nossos Pet Sitters enviam relatórios diários detalhados,
+                juntamente com fotos e vídeos, para que você possa acompanhar o progresso e o bem-estar dos seus animais
+                de estimação em tempo real.
+            </article>
+            <div class="img-botao">
+                <img src="imagens/petsitterpng.png" alt="PetSitter" class="imgpetsitter">
+                <a class="botao-img"
+                    href="https://www.instagram.com/p/CloQb__uJ4M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank">Saiba Mais! <span class="material-icons">
                         launch
-                        </span></a>
-                </div>
+                    </span></a>
+            </div>
         </div>
         <div class="textos" id="transporte">
             <article class="servicos">
-                <strong>Transporte Pet Personalizado</strong>
-                No universo da <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, oferecemos um serviço de transporte pet personalizado que vai além do convencional. Sabemos o quanto pode ser complicado coordenar os compromissos do seu pet com os seus próprios, e é por isso que desenvolvemos um serviço que atende às necessidades de transporte dos seus amigos peludos de forma personalizada e conveniente. <br><br>
-                Nosso transporte pet personalizado é uma solução abrangente, projetada para simplificar a vida dos tutores e garantir que seus pets recebam todos os cuidados necessários, mesmo quando você está ocupado. O processo é simples: basta agendar o transporte com antecedência, informando a data, horário e local de partida e destino. <br><br>
-                Nossos motoristas especializados irão até a sua casa para buscar o seu pet e levá-lo até o seu destino, seja para uma consulta veterinária, banho e tosa, ou para um dia divertido em um hotelzinho ou creche. Após o término do compromisso do seu pet, nós o retornamos para casa em segurança. <br><br>
-                O que diferencia nosso serviço é o cuidado e a atenção aos detalhes. Nossos motoristas estão sempre atentos às necessidades individuais de cada pet, garantindo que eles se sintam confortáveis e seguros durante todo o trajeto. Além disso, eles também recebem todas as informações necessárias dos profissionais que atenderam o seu pet, para que você fique totalmente informado sobre o estado de saúde e bem-estar do seu amigo peludo. <br><br>
-                Oferecemos opções flexíveis de agendamento, desde transportes avulsos até pacotes mensais. Os pacotes mensais oferecem vantagens adicionais, como descontos no valor, prioridade de atendimento em emergências e horários reservados para os clientes, garantindo conveniência e economia para os tutores comprometidos com o bem-estar dos seus pets.               
+                <strong class="venda"><strong class="transportepink">Transporte</strong> <strong class="pet">Pet</strong> Personalizado</strong>
+                No universo da <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição, oferecemos um
+                serviço de transporte pet personalizado que vai além do convencional. Sabemos o quanto pode ser
+                complicado coordenar os compromissos do seu pet com os seus próprios, e é por isso que desenvolvemos um
+                serviço que atende às necessidades de transporte dos seus amigos peludos de forma personalizada e
+                conveniente. <br><br>
+                Nosso transporte pet personalizado é uma solução abrangente, projetada para simplificar a vida dos
+                tutores e garantir que seus pets recebam todos os cuidados necessários, mesmo quando você está ocupado.
+                O processo é simples: basta agendar o transporte com antecedência, informando a data, horário e local de
+                partida e destino. <br><br>
+                Nossos motoristas especializados irão até a sua casa para buscar o seu pet e levá-lo até o seu destino,
+                seja para uma consulta veterinária, banho e tosa, ou para um dia divertido em um hotelzinho ou creche.
+                Após o término do compromisso do seu pet, nós o retornamos para casa em segurança. <br><br>
+                O que diferencia nosso serviço é o cuidado e a atenção aos detalhes. Nossos motoristas estão sempre
+                atentos às necessidades individuais de cada pet, garantindo que eles se sintam confortáveis e seguros
+                durante todo o trajeto. Além disso, eles também recebem todas as informações necessárias dos
+                profissionais que atenderam o seu pet, para que você fique totalmente informado sobre o estado de saúde
+                e bem-estar do seu amigo peludo. <br><br>
+                Oferecemos opções flexíveis de agendamento, desde transportes avulsos até pacotes mensais. Os pacotes
+                mensais oferecem vantagens adicionais, como descontos no valor, prioridade de atendimento em emergências
+                e horários reservados para os clientes, garantindo conveniência e economia para os tutores comprometidos
+                com o bem-estar dos seus pets.
             </article>
             <div class="img-botao">
                 <img id="transportes" src="imagens/transporte1.png" alt="">
-                <a class="botao-img" style="background-color: #FF7FCF;" href="https://www.instagram.com/p/Ciiq3c_PSlk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Saiba Mais! <span class="material-icons">
-                    launch
+                <a class="botao-img" style="background-color: #FF7FCF;"
+                    href="https://www.instagram.com/p/Ciiq3c_PSlk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank">Saiba Mais! <span class="material-icons">
+                        launch
                     </span></a>
             </div>
         </div>
@@ -81,37 +139,62 @@
         </h1>
         <div class="textos">
             <article class="produtos1">
-                Na <strong id="go" >Go</strong><strong id="pet">Pet</strong> Nutrição, estamos comprometidos em oferecer apenas os melhores produtos para os nossos clientes peludos. Por isso, garantimos que todos os produtos que revendemos são provenientes de fábricas que passam por uma rigorosa fiscalização dos órgãos competentes. <br><br>
-                Todas as fábricas parceiras da <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição são geridas por profissionais altamente qualificados, incluindo médicos veterinários e zootecnistas. Esses especialistas entendem a importância da qualidade e segurança dos produtos que oferecemos para os pets, e trabalham incansavelmente para garantir que cada item atenda aos mais altos padrões de excelência. <br><br>
-                Nós nos orgulhamos de oferecer uma ampla variedade de produtos que promovem o bem-estar e a felicidade dos pets, e estamos comprometidos em continuar a trabalhar com fábricas que compartilham os nossos valores de qualidade, segurança e cuidado com os animais. <br><br>
-                Na <strong id="go">Go</strong><strong id="pet">Pet</strong> Nutrição, acreditamos que nossos clientes peludos merecem apenas o melhor, e é isso que nos esforçamos para fornecer em cada produto que oferecemos.
+                Na <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição, estamos comprometidos em
+                oferecer apenas os melhores produtos para os nossos clientes peludos. Por isso, garantimos que todos os
+                produtos que revendemos são provenientes de fábricas que passam por uma rigorosa fiscalização dos órgãos
+                competentes. <br><br>
+                Todas as fábricas parceiras da <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição
+                são geridas por profissionais altamente qualificados, incluindo médicos veterinários e zootecnistas.
+                Esses especialistas entendem a importância da qualidade e segurança dos produtos que oferecemos para os
+                pets, e trabalham incansavelmente para garantir que cada item atenda aos mais altos padrões de
+                excelência. <br><br>
+                Nós nos orgulhamos de oferecer uma ampla variedade de produtos que promovem o bem-estar e a felicidade
+                dos pets, e estamos comprometidos em continuar a trabalhar com fábricas que compartilham os nossos
+                valores de qualidade, segurança e cuidado com os animais. <br><br>
+                Na <strong class="go">Go</strong><strong class="pet">Pet</strong> Nutrição, acreditamos que nossos
+                clientes peludos merecem apenas o melhor, e é isso que nos esforçamos para fornecer em cada produto que
+                oferecemos.
             </article>
             <aside class="produtosall">
                 <div>
-                    <strong class="stroprodutos">Mordedores Naturais:</strong> Nossos mordedores naturais são feitos a partir de cascos e chifres de bovinos ou bubalinos. Esses produtos são ideais para satisfazer o instinto natural de roer dos pets, proporcionando-lhes uma experiência de mastigação segura e saudável. Eles podem ser oferecidos tanto recheados com patê e ração congelados para os dias de calor, quanto sem recheios. Com alta durabilidade e fácil armazenamento e limpeza após o uso, os mordedores naturais são uma excelente opção para manter seus pets entretidos e felizes.
+                    <div><strong class="stroprodutos">Mordedores Naturais:</strong></div>
+                    <img src="imagens/mordedor-natural.png" alt="">
+                     Nossos mordedores naturais são feitos a
+                    partir de cascos e chifres de bovinos ou bubalinos. <br>
+                    Eles podem ser oferecidos tanto recheados com patê e ração congelados para os dias de
+                    calor, quanto sem recheios. Com alta durabilidade e fácil armazenamento e limpeza após o uso.
+                    <a class="botao-img" style="background-color: #4FC167;"
+                    href=""
+                    target="_blank">Compre Agora! <span class="material-icons">
+                        launch
+                    </span></a>
+                    
                 </div>
                 <div>
-                    <strong class="stroprodutos">Mastigáveis Naturais:</strong> Nossos mastigáveis naturais incluem focinhos bovinos, orelhas, tranças de couro e uma variedade de outras opções. Todos os mastigáveis são desidratados e passam por um rigoroso controle sanitário de produção para garantir a máxima segurança e qualidade. Com fontes proteicas diversas, como pato, frango, jacaré, bovino ou suíno, oferecemos uma ampla gama de opções para atender às preferências e necessidades individuais dos pets. A durabilidade dos mastigáveis naturais varia de acordo com o potencial de mastigação e o porte do pet, garantindo uma experiência personalizada para cada animal.
+                    <div><strong class="stroprodutos">Mastigáveis Naturais:</strong></div>
+                    <img src="imagens/mastigavel-natural.png" alt="">
+                    Nossos mastigáveis naturais incluem focinhos bovinos, orelhas, tranças de couro e uma variedade de outras opções. <br>Todos os mastigáveis são desidratados e passam por um rigoroso controle sanitário , Com proteínas diversas, oferecendo uma ampla gama de opções.
+                    <a class="botao-img" style="background-color: #4FC167;"
+                    href=""
+                    target="_blank">Compre Agora! <span class="material-icons">
+                        launch
+                    </span></a>
+                    
                 </div>
                 <div>
-                    <strong class="stroprodutos">Petiscos de Agrado:</strong> Nossos petiscos de agrado são indicados para pets de porte pequeno e mini. Eles incluem tendões, colágenos e outras opções, oferecendo uma recompensa deliciosa e saudável para os seus amigos peludos. Além de serem utilizados como recompensa durante os treinos, esses petiscos são perfeitos para mimar seus pets com um agrado saboroso e nutritivo.
+                    <div><strong class="stroprodutos">Petiscos de Agrado:</strong></div>
+                    <img src="imagens/petiscos.png" alt="">
+                    Nossos petiscos de agrado são indicados para pets de porte pequeno e mini. <br> Eles incluem tendões, colágenos e outras opções, oferecendo uma recompensa deliciosa e saudável para os seus amigos peludos. Além de serem utilizados como recompensa durante os treinos.
+                    <a class="botao-img" style="background-color: #4FC167;"
+                    href=""
+                    target="_blank">Compre Agora! <span class="material-icons">
+                        launch
+                    </span></a>
+                    
                 </div>
             </aside>
         </div>
     </main>
-    <script>
-        document.querySelectorAll('.toggle-button').forEach(button => {
-            button.addEventListener('click', () => {
-                const hiddenText = button.previousElementSibling;
-                if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
-                    hiddenText.style.display = 'inline';
-                    button.textContent = 'Ver Menos';
-                } else {
-                    hiddenText.style.display = 'none';
-                    button.textContent = 'Ver Mais';
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
