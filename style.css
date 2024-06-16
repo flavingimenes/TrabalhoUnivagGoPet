@@ -362,9 +362,10 @@ view {
 
 .textos {
    animation: appear linear;
-   animation-timeline: view();
+   animation-timeline: view(0);
    animation-range: entry 0 cover 20%;
 }
+
 
 #transporte {
    margin-top: 130px;
@@ -459,6 +460,11 @@ view {
       padding-left: 0px;
    }
 
+   main.main1{
+      background-image: url(imagens/cachorro-fundo2.jpeg);
+      background-position: center;
+   }
+   
 }
 
 footer {
