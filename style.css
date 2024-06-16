@@ -183,14 +183,16 @@ main.main1 {
    margin: auto;
    padding-left: 10px;
    padding-right: 10px;
+   display: -webkit-flex;
    display: flex;
    text-align: center;
    justify-content: space-around;
    padding-top: 140px;
    padding-bottom: 140px;
    background-image: url(imagens/cachorro-no-computer.jpg);
-   background-attachment: fixed;
+   background-attachment: scroll;
    background-size: cover;
+   -webkit-align-items: center;
    align-items: center;
    border-top: 4px solid #2d481f;
    border-bottom: 4px solid #2d481f;
@@ -350,6 +352,7 @@ main>div>div>img {
    }
 
    to {
+      -webkit-animation: opacity 1s;
       opacity: 1;
       scale: 1;
    }
