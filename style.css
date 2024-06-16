@@ -189,11 +189,8 @@ main.main1 {
    padding-top: 140px;
    padding-bottom: 140px;
    background-image: url(imagens/cachorro-no-computer.jpg);
-   background-repeat: no-repeat;
    background-attachment: fixed;
-   background-position: center;
    background-size: cover;
-   height: auto;
    align-items: center;
    border-top: 4px solid #2d481f;
    border-bottom: 4px solid #2d481f;
