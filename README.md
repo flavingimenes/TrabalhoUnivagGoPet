@@ -1,43 +1,66 @@
-<h1 align="center">
-  🐾 GoPet - Soluções para seu Pet
-</h1>
+# 🐾 GoPet - Soluções para seu Pet
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-<p align="center">
-  Site interativo desenvolvido como projeto acadêmico na UNIVAG, focado na apresentação visual de serviços e produtos naturais para o bem-estar animal.
-</p>
+## 📌 Sobre o Projeto
+
+O **GoPet** é uma landing page desenvolvida como projeto acadêmico para a **UNIVAG**, com o objetivo de apresentar os serviços e produtos da GoPetCuiabá de forma clara, visual e responsiva.
+
+O site foi criado para divulgar soluções voltadas ao bem-estar animal, incluindo serviços como **Pet Sitter**, **Transporte Pet Personalizado** e a apresentação de **produtos naturais para pets**.
+
+A proposta do projeto é reunir as principais informações da empresa em uma página única, com navegação simples, visual amigável e acesso rápido aos canais de contato.
 
 ---
 
-## 🎯 Sobre o Projeto
+## 🎯 Objetivo
 
-O **GoPet** é uma *landing page* interativa projetada para conectar tutores de pets a serviços e produtos de qualidade. O objetivo da plataforma é apresentar, de forma clara e atrativa, soluções para cuidados animais, com foco especial em opções naturais.
+O objetivo principal do projeto é construir uma página institucional para apresentar a marca GoPetCuiabá, destacando seus serviços, produtos e formas de contato.
 
-A navegação foi pensada para ser fluida e direta, concentrando todas as informações essenciais em uma experiência de página única (Single Page).
+Além disso, o projeto também serviu como prática acadêmica para aplicar conceitos fundamentais de desenvolvimento web, como estruturação HTML, estilização CSS, responsividade e interações com JavaScript.
 
-### ✨ Principais Funcionalidades
+---
 
-* **Navegação Single Page:** Estrutura otimizada em uma única página com navegação fluida através de âncoras (scroll suave).
-* **Vitrine de Produtos Naturais:** Seção dedicada ao destaque de produtos saudáveis e sustentáveis para pets.
-* **Apresentação de Serviços:** Descrição visual dos serviços de cuidado e estética animal oferecidos.
-* **Contato Direto:** Integração para contato rápido via WhatsApp, facilitando o agendamento ou dúvidas.
-* **Identidade Visual:** Uso estratégico de imagens e ícones para criar uma atmosfera amigável e temática.
+## ✨ Funcionalidades
+
+- Página única no estilo **Single Page**
+- Menu de navegação com links para seções da página
+- Menu responsivo com botão hambúrguer em telas menores
+- Seções informativas sobre a empresa, serviços e produtos
+- Botões de **“Ver Mais”** e **“Ver Menos”** para exibir textos adicionais
+- Links externos para contato e redes sociais
+- Layout responsivo para diferentes tamanhos de tela
+- Uso de imagens temáticas relacionadas ao universo pet
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-O projeto foi construído utilizando as tecnologias fundamentais da web para garantir leveza e compatibilidade:
-
 ### Front-end
-* **HTML5:** Estruturação semântica da página única (`index.html`).
-* **CSS3:** Estilização completa e layout responsivo (`style.css`).
-* **JavaScript:** Lógica de interatividade e manipulação do DOM (`script.js`).
-* **Assets:** Gerenciamento de imagens e ícones temáticos (pasta `/imagens`).
+
+- **HTML5**  
+  Utilizado para estruturar o conteúdo da página, como cabeçalho, seções, artigos, imagens, links e rodapé.
+
+- **CSS3**  
+  Utilizado para a estilização visual do site, incluindo cores, fontes, responsividade, espaçamentos, cards, botões, menu e animações.
+
+- **JavaScript**  
+  Utilizado para adicionar interatividade ao projeto, como a função de mostrar/ocultar textos e o controle do menu responsivo.
 
 ---
+
+## 📁 Estrutura do Projeto
+
+```bash
+TrabalhoUnivagGoPet/
+├── imagens/
+│   └── imagens utilizadas no site
+├── textos/
+│   └── arquivos de apoio/textos do projeto
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── LICENSE
+└── .gitignore
